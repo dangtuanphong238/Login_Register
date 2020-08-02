@@ -22,6 +22,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         if(v == txtSignIn)
         {
             Intent intent = new Intent(RegisterActivity.this,LoginActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
             startActivity(intent);
         }
     }
